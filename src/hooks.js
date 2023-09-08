@@ -16,7 +16,7 @@ const useFlip = ( initiallyUp=true ) => {
 
 }
 
-// https://deckofcardsapi.com/api/deck/new/draw/
+// Accepts baseUrl - returns an array of responses and a function setResponses which accepts an endPointName and makes an axios call to that baseUrl + endpoint + "/"
 const useAxios = (baseUrl) => {
 
     const [responses, setResponses] = useState([]);
